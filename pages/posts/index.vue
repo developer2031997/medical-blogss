@@ -1,7 +1,7 @@
 <template>
   <div class="container px-5 py-5 mx-auto">
     <div class="text-center pb-4">
-      <form class="flex flex-wrap g-3 justify-evenly" @submit="serchPost">
+      <form class="flex flex-wrap gap-5 justify-center items-center" @submit="serchPost">
         <div class="col-auto my-2">
           <input
             type="text"
@@ -60,12 +60,12 @@
             </option>
           </select>
         </div>
-        <div class="col-auto my-2">
+        <div class="col-auto my-2 ">
           <a
             href=""
-            class="btn-clear px-3 py-2 rounded-md shadow-md"
+            class="btn-clear p-2 px-4 rounded-md shadow-md"
             @click="clearFilter"
-            >Clear</a
+            ><b>Clear</b></a
           >
         </div>
 
