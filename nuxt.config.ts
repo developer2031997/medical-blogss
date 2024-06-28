@@ -31,4 +31,7 @@ export default defineNuxtConfig({
   },
   plugins: [
   ],
+  env: {
+    NODE_OPTIONS: '--max_old_space_size=4096',
+  },
 })
