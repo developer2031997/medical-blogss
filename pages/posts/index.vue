@@ -155,6 +155,8 @@ const subCategories = ref({
   wellness: ["Yoga", "Meditation", "Lifestyle"],
   medicine: [categories.value],
 });
+console.log("outside filteredPosts", filteredPosts);
+
 
 const fetchArticles = async () => {
   try {
@@ -162,7 +164,7 @@ const fetchArticles = async () => {
     articles.value = data;
     filteredPosts.value = data;
     loading.value = false;
-    // console.log("Inside articles", articles.value);
+    console.log("Inside filteredPosts", filteredPosts);
 
     const allTags = articles.value.flatMap((article) => article.tags || []);
     categories.value = [...new Set(allTags)];
