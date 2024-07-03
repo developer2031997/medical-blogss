@@ -21,6 +21,7 @@ export default defineNuxtConfig({
     '@nuxtjs/tailwindcss',
     "@nuxt/image"
   ],
+  components: true,
   googleFonts: {
     families: {
       Poppins: [300, 400, 500, 600, 700],

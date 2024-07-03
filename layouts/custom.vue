@@ -1,6 +1,5 @@
 <template>
-    <div>
-        <nav class="menubar-bg border-gray-200 dark:bg-gray-900">
+    <nav class="menubar-bg border-gray-200 dark:bg-gray-900">
         <div class="container max-w-screen-xl flex flex-wrap items-center justify-between mx-auto">
             <NuxtLink href="/" class="flex items-center space-x-3 rtl:space-x-reverse">
                 <!-- <img src="https://flowbite.com/docs/images/logo.svg" class="h-8" alt="Flowbite Logo" /> -->
@@ -47,8 +46,7 @@
             </div>
         </div>
     </nav>
-
-        <div class="">
+    <div class="">
             <slot />
         </div>
 
@@ -59,17 +57,12 @@
                 </h1>
             </div>
         </footer>
-    </div>
+
 </template>
 
 <script setup>
     const isSticky = ref(false);
     const isOpen = ref(false);
-    const toggleMenu = () =>{
-        console.log("menubar is toogle")
-        isOpen.value = !isOpen.value;
-        console.log(isOpen.value)
-    }
 
     const handleScroll = () => {
         if (window.pageYOffset > 200) {
@@ -78,6 +71,12 @@
             isSticky.value = false;
         }
     };
+
+    const toggleMenu = () =>{
+        console.log("menubar is toogle")
+        isOpen.value = !isOpen.value;
+        console.log(isOpen.value)
+    }
 
     onMounted(() => {
         // window.addEventListener('scroll', handleScroll);
