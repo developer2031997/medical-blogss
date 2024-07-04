@@ -1,16 +1,16 @@
 <template>
     <div>
         <nav class="menubar-bg border-gray-200 dark:bg-gray-900">
-        <div class="container max-w-screen-xl flex flex-wrap items-center justify-between mx-auto">
+        <div class="container px-2 max-w-screen-xl flex flex-wrap items-center justify-between mx-auto">
             <NuxtLink href="/" class="flex items-center space-x-3 rtl:space-x-reverse">
                 <!-- <img src="https://flowbite.com/docs/images/logo.svg" class="h-8" alt="Flowbite Logo" /> -->
-                <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Medical
+                <span class="text-white self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Medical
                     Blogs.</span>
             </NuxtLink>
 
             <!-- Mobile Menu Button -->
             <button  @click="toggleMenu" data-collapse-toggle="navbar-default" type="button"
-                class="my-2 bg-white inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+                class="my-2 bg-white inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:text-black hover:bg-gray-100 hover:font-semibold focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
                 aria-controls="navbar-default" aria-expanded="false">
                 <span class="sr-only">Open main menu</span>
                 <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
@@ -25,22 +25,22 @@
                 <ul class="font-medium flex flex-col p-4 md:flex-row md:space-x-8 rtl:space-x-reverse">
                     <li>
                         <NuxtLink href="/"
-                            class="block py-2 px-3 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 dark:text-white md:dark:text-blue-500"
+                            class="block py-2 px-3 my-1 text-white  hover:bg-gray-100  hover:text-black hover:font-semibold rounded md:bg-transparent md:text-blue-700 md:p-0 dark:text-white md:dark:text-blue-500"
                             aria-current="page">Home</NuxtLink>
                     </li>
                     <li>
                         <NuxtLink href="about"
-                            class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">
+                            class="block py-2 px-3 my-1 text-white  rounded hover:text-black hover:bg-gray-100 hover:font-semibold md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">
                             About</NuxtLink>
                     </li>
                     <li>
                         <NuxtLink href="/posts"
-                            class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">
+                            class="block py-2 px-3 my-1 text-white  rounded hover:text-black hover:bg-gray-100 hover:font-semibold md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">
                             Blogs</NuxtLink>
                     </li>
                     <li>
                         <NuxtLink href="/contact"
-                            class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">
+                            class="block py-2 px-3 my-1 text-white  rounded hover:text-black hover:bg-gray-100 hover:font-semibold md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">
                             Contact</NuxtLink>
                     </li>
                 </ul>
@@ -92,7 +92,6 @@
     a,
     NuxtLink {
         text-decoration: none;
-        color: #fff !important;
     }
 
     .nav-link a:hover {
