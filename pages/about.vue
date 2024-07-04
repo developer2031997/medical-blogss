@@ -91,9 +91,6 @@
 useHead({
   title: "Medical Blog Website",
 });
-definePageMeta({
-  layout: 'custom'
-})
 </script>
 
 <style></style>

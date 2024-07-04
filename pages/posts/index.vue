@@ -133,7 +133,7 @@
         wellness: ["Yoga", "Meditation", "Lifestyle"],
         medicine: [categories.value],
     });
-    console.log("outside filteredPosts", filteredPosts);
+    console.log("outside filteredPosts", filteredPosts.value);
 
 
     const fetchArticles = async () => {
@@ -142,7 +142,7 @@
             articles.value = data;
             filteredPosts.value = data;
             loading.value = false;
-            console.log("Inside filteredPosts", filteredPosts);
+            console.log("Inside filteredPosts", filteredPosts.value);
 
             const allTags = articles.value.flatMap((article) => article.tags || []);
             categories.value = [...new Set(allTags)];
