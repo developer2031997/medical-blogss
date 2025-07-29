@@ -42,16 +42,16 @@ export default defineNuxtConfig({
       background_color: "#ffffff",
       theme_color: "#00DC82",
       icons: [
-        // {
-        //   src: "/icon-192.png",
-        //   sizes: "192x192",
-        //   type: "image/png",
-        // },
-        // {
-        //   src: "/icon-512.png",
-        //   sizes: "512x512",
-        //   type: "image/png",
-        // },
+        {
+          src: "https://thumbs.dreamstime.com/b/creative-simple-dragons-silhouettes-logo-stylized-vector-illustrations-simple-dragons-silhouettes-logo-130475058.jpg",
+          sizes: "192x192",
+          type: "image/png",
+        },
+        {
+          src: "https://thumbs.dreamstime.com/b/creative-simple-dragons-silhouettes-logo-stylized-vector-illustrations-simple-dragons-silhouettes-logo-130475058.jpg",
+          sizes: "512x512",
+          type: "image/png",
+        },
       ],
     },
   },
