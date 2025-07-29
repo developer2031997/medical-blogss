@@ -2,6 +2,13 @@
 export default defineNuxtConfig({
   devtools: { enabled: false },
   ssr: true,
+    content: {},
+  nitro: {
+    prerender: {
+      crawlLinks: true, // important
+      routes: ['/'],    // add your root route or any specific ones you want
+    },
+  },
   css: [
     // '~~/layout/main.css',
     "@/assets/css/tailwind.css",

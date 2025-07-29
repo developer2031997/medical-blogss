@@ -171,7 +171,10 @@ console.log("outside filteredPosts", filteredPosts.value);
 const fetchArticles = async () => {
   try {
     console.log("renderrrr...");
-    const data = await queryContent("posts").find();
+
+    const { data: articles } = await useAsyncData("all-articles", () =>
+      queryContent("/posts").find()
+    );
     console.log("data", data);
     articles.value = data;
     filteredPosts.value = data;
