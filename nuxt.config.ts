@@ -2,11 +2,13 @@
 export default defineNuxtConfig({
   devtools: { enabled: false },
   ssr: true,
-    content: {},
+  content: {
+    documentDriven: true, // optional, but can help
+  },
   nitro: {
     prerender: {
-      crawlLinks: true, // important
-      routes: ['/'],    // add your root route or any specific ones you want
+      crawlLinks: true, // follow NuxtLink to pre-render
+      routes: ["/"], // ensure the homepage is pre-rendered
     },
   },
   css: [
