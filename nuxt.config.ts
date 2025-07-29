@@ -11,13 +11,7 @@ export default defineNuxtConfig({
   nitro: {
     prerender: {
       crawlLinks: true,
-      routes: [
-        "/", // homepage
-        "/about", // static
-        "/contact", // static
-        "/posts", // blog listing page
-        // Optional: individual posts if needed, or automate via API route
-      ],
+      routes: ["/posts"],
       failOnError: false, // TEMP: suppress errors until resolved
     },
   },
