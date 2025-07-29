@@ -172,11 +172,9 @@ const fetchArticles = async () => {
   try {
     console.log("renderrrr...");
 
-    const { data: articlesData } = await useAsyncData("articles", () =>
-      queryContent("/posts").find()
-    );
+    const articlesData = await queryContent("/posts").find();
 
-    if (!articlesData.value) {
+    if (!articlesData || articlesData.length === 0) {
       throw new Error("No articles found");
     }
     const { data: articles } = await useAsyncData("all-articles", () =>
