@@ -172,12 +172,19 @@ const fetchArticles = async () => {
   try {
     console.log("renderrrr...");
 
+    const { data: articlesData } = await useAsyncData("articles", () =>
+      queryContent("/posts").find()
+    );
+
+    if (!articlesData.value) {
+      throw new Error("No articles found");
+    }
     const { data: articles } = await useAsyncData("all-articles", () =>
       queryContent("/posts").find()
     );
-    console.log("data", data);
-    articles.value = data;
-    filteredPosts.value = data;
+    console.log("data", articlesData);
+    articles.value = articlesData;
+    filteredPosts.value = articlesData;
     loading.value = false;
     console.log("Inside filteredPosts", filteredPosts.value);
 
